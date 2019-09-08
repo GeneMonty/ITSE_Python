@@ -6,34 +6,34 @@
 
 #Start
 
-#Declare variables
-restauranSales = int(input("Enter your amount in Sales:$ ")) 
-
 #Delcare Constants
-salesTax = 0.10
-gratuAmount= 0.08
-gratuTax = 0.12
+SALES_TAX = 0.10
+GRATU_AMOUNT = 0.08
+GRATU_TAX = 0.12
+
+#Declare variables
+restaurantSales = int(input("Enter your amount in Sales:$ ")) 
 
 #Calculations
 
-taxTotal = float(restauranSales) * float(salesTax)
-gratuAmount = float(restauranSales) * float(gratuAmount)
-gratuTax = float(gratuAmount) * float(gratuTax)
+taxTotal = float(restaurantSales) * float(SALES_TAX)
+gratuAmountTotal = float(restaurantSales) * float(GRATU_AMOUNT)
+gratuTaxTotal = float(gratuAmountTotal) * float(GRATU_TAX)
 
 #Prints the results for the user.
 
-print("Your Sales: $",restauranSales ,"Dollars")
+print("Your Sales: $",restaurantSales ,"Dollars")
 print("Sales Tax: $",taxTotal ,"Dollars")
-print("Gratuities Total: $",gratuAmount, "Dollars")
-print("Tax on Gratuities: $",gratuTax, "Dollars")
+print("Gratuities Total: $",gratuAmountTotal, "Dollars")
+print("Tax on Gratuities: $",gratuTaxTotal, "Dollars")
 
 #stop
 
 
-#print("Your Sales: $",round(restauranSales, 2) ,"Dollars")
+#print("Your Sales: $",round(restaurantSales, 2) ,"Dollars")
 #print("Sales Tax: $",round(taxTotal, 2) ,"Dollars")
-#print("Gratuities Total: $",round(gratuAmount, 2), "Dollars")
-#print("Tax on Gratuities: $",round(gratuTax, 2) , "Dollars")
+#print("Gratuities Total: $",round(GRATU_AMOUNT, 2), "Dollars")
+#print("Tax on Gratuities: $",round(GRATU_TAX, 2) , "Dollars")
 
 
 
