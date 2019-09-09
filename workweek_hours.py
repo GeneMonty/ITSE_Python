@@ -16,13 +16,11 @@ leftHoursYear = DAY_HOURS * (YEAR - WORK_YEAR)
 sleepingHours = SLEEP_HOURS * YEAR
 
 print("You work: " + str(workHours) + " hours a day")
-
 print("You work: " + str(weekHours) + " Hours a week.")
-
 print("You work: " + str(yearHours) + " hours a year")
 print("---------------------------------")
 print("You have: " + str(totalHoursYear) + " hours per year")
 print("You Sleep around " + str(sleepingHours)  + " hours a year ")
-freeHours = totalHoursYear - sleepingHours - yearHours
 
+freeHours = totalHoursYear - sleepingHours - yearHours
 print("You have " + str(freeHours) + " free hours")
