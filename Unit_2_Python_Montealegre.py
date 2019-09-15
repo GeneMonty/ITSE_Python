@@ -32,6 +32,7 @@ print("Tax on Gratuities: $",gratuTaxTotal, "Dollars")
 #stop
 
 
+
 #print("Your Sales: $",round(restaurantSales, 2) ,"Dollars")
 #print("Sales Tax: $",round(taxTotal, 2) ,"Dollars")
 #print("Gratuities Total: $",round(gratuAmount, 2), "Dollars")
