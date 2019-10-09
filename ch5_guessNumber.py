@@ -32,7 +32,7 @@ while keepGoing == "Y":
 if keepGoing == "N":
     print("Goodbye")
 
-
+#Validating User Input
 # Summary
 # In this lab, you will make additions to a Python program provided. The program is a guessing game. A random number between 1 and 10 is generated in the program. The user enters a number between 1 and 10, trying to guess the correct number.
 
@@ -44,3 +44,4 @@ if keepGoing == "N":
 # Make sure the file GuessNumber.py is selected and open.
 # Write loops that validate input at all places in the code where the user is asked to provide input. Comments have been included in the code to help you identify where these loops should be written.
 # Execute the program. See if you can guess the randomly generated number. Execute the program several times to see if the random number changes. Also, test the program to verify that incorrect input is handled correctly. On your best attempt, how many guesses did you have to take to guess the correct number?
+
