@@ -11,16 +11,21 @@ HouseSign.py - This program calculates prices for custom house signs.
 charge = 35.0
 numChars = 8
 color = "gold"
-woodType = "oak"
+woodType ="oak"
 
 # Write assignment and if statements here as appropriate.
 
+# numChars = int(input("Enter number of Characters: \n>"))
+# color = input("Input Color: \n>")
+# woodType = input("Enter Wood Type: \n>")
 
-if numChars == 8:
+if numChars > 5:
     charge = charge + (numChars - 5) * 4
+
     
 if color == "gold":
     charge = charge + 15.00
+
 
 if woodType == "oak":
     charge = charge + 20
