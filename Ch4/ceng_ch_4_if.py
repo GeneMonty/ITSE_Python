@@ -17,7 +17,7 @@ woodType ="oak"
 
 # numChars = int(input("Enter number of Characters: \n>"))
 # color = input("Input Color: \n>")
-# woodType = input("Enter Wood Type: \n>")
+# woodType = input("Enter Wood Type: \n>") 
 
 if numChars > 5:
     charge = charge + (numChars - 5) * 4
