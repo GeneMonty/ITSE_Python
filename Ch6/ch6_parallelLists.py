@@ -17,10 +17,41 @@ orderTotal = 2.00  # All orders start with a 2.00 charge
 addIn = input("Enter coffee add-in or XXX to quit: ")
 
 # Write the rest of the program here.
+addIn = ""
+while addIn != "XXX":
+    addIn = input("Enter coffee add-in or XXX to quit: ")
+    if addIn in addIns:
+            foundIt = True
+            index =addIns.index(addIn)
+            orderTotal = orderTotal + addInPrices[index]
+            print(addIn + " Price is $" +str(addInPrices[index]))
+
+    else:
+            print("Sorry we do not carry that.")
+
+print("Order Total is $" + str(orderTotal))
 
 
-    
+
+
+
+#dont works but not accepted by the bot
+        # for i in range(NUM_ITEMS):
+        #         if addIns[i] or addInPrices[i] == addIn:
+        #                 result = True
+        #                 break
+        #         else:
+        #                 result = False
+        #         print(i,addIn,addInPrices,addIns)
+
+        # if result:
+        #         print("Found:", addIns[i],addInPrices[i]) 
+        # else:
+        #         print("Sorry, we do not carry that.")
+
+########    
 # Summary
+#########
 #         In this lab, you use what you have learned about parallel lists to complete a partially completed Python program.
 
 #         The program should either print the name and price for a coffee add-in from the Jumpin’ Jive Coffee Shop or it should print the message "Sorry, we do not carry that.".

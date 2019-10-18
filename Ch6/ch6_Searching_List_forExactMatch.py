@@ -11,11 +11,22 @@ inCity = input("Enter name of city: ")
 
 # Write your test statement here to see if there is a match.
 
+#for i in range(9):
+
+for i in range(len(citiesInMichigan)):
+
 # If the city is found, print "City found."
+        if citiesInMichigan[i] == inCity:
+                result = True
+                break # to break the code to result
+        else:
+                result = False
+if result:
+        print("City found")
+else:
+        print("Not a city in Michigan")
 
 # Otherwise, "Not a city in Michigan" message should be printed. 
-
-
 
 
 
