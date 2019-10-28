@@ -58,15 +58,51 @@
 
 
 
-MAX_AVG = 8
-avg=[]
+# MAX_AVG = 8
+# avg=[]
 
-for i in range(MAX_AVG):
-        avgString = input("add number ")
-        battAvg = float(avgString)
-        avg.insert(i,battAvg)
-        print(avg)
-        #avg.append(battAvg)
-        # avg[i] = battAvg #the non python way
-        # i += 1
+# for i in range(MAX_AVG):
+#         avgString = input("add number ")
+#         battAvg = float(avgString)
+#         avg.insert(i,battAvg)
+#         print(avg)
+#         #avg.append(battAvg)
+#         # avg[i] = battAvg #the non python way
+#         # i += 1
+        
+        
+        
+# degrees = 0       
+# convertToRadians(2)
+
+# def convertToRadians():
+#         degree = input("Blabla number 1-360")
+#         radians = degrees / 57.2957
+#         return radians
+
+
+degrees = 0
+radians = 0.0
+radDegree = 57.2957
+start = "y"
+
+def getRadians(degrees):
+        radians = degrees / radDegree
+        result = radians
+        print(degrees,"degrees =", round(result,2) , "Radians")
+        #return result
+        #round(number[result, 2])
+
+start = input("Wanto to Start?")
+while start == "y" :
+
+        print ("Hello, this dumb ass shit will calculate your radians from Degrees")
+        
+        degrees =  int(input())
+
+        getRadians(degrees)
+        
+        start = input("Wanto to continue?")
+
+
         
