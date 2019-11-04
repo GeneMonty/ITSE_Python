@@ -81,28 +81,37 @@
 #         return radians
 
 
-degrees = 0
-radians = 0.0
-radDegree = 57.2957
-start = "y"
+# degrees = 0
+# radians = 0.0
+# radDegree = 57.2957
+# start = "y"
 
-def getRadians(degrees):
-        radians = degrees / radDegree
-        result = radians
-        print(degrees,"degrees =", round(result,2) , "Radians")
-        #return result
-        #round(number[result, 2])
+# def getRadians(degrees):
+#         radians = degrees / radDegree
+#         result = radians
+#         print(degrees,"degrees =", round(result,2) , "Radians")
+#         #return result
+#         #round(number[result, 2])
 
-start = input("Wanto to Start?")
-while start == "y" :
+# start = input("Wanto to Start?")
+# while start == "y" :
 
-        print ("Hello, this dumb ass shit will calculate your radians from Degrees")
+#         print ("Hello, this dumb ass shit will calculate your radians from Degrees")
         
-        degrees =  int(input())
+#         degrees =  int(input())
 
-        getRadians(degrees)
+#         getRadians(degrees)
         
-        start = input("Wanto to continue?")
+#         start = input("Wanto to continue?")
 
 
+PrecioSmall = 2 +(2 *.20)
+PrecioLarge = 2 -(2 *.15)             
         
+# x=['2','3','4','5']
+# print('---o---'.join(x)
+
+a= 1
+b=2
+print(a+b)
+

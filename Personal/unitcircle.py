@@ -105,7 +105,7 @@ print("\n--\n ")
 
 # i=1
 
-quads = 8
+quads = 4
 pi = 3.1428
 #1 radian = 57.2957 degrees
 radianDegree = 57.2957
@@ -113,9 +113,9 @@ radianDegree = 57.2957
 #(1pi/4)* radianDegree
 
 def get_pi_numerator(i): #Gets numerator
-        num30 = (2*i)+1 #numerator = (2*i)+1 no working
-        num45 = (2*i)+1 #numerator = (2*i)+1
-        num60 = (2*i)+1 #numerator = (2*i)+1
+        num30 = (2*i)+1 #numerator = (2*i)+1 no working π/6
+        num45 = (2*i)+1 #numerator = (2*i)+1 π/4
+        num60 = (2*i)+1 #numerator = (2*i)+1  π/3
         return num30,num45,num60
 
 print("\nCoterminal Angles of 45° \nAccross " + str(quads) + " Quadrants in Radians\n")
@@ -125,10 +125,10 @@ for i in range(quads):
         print("Quadrant: "+str(i+1))
         
         #print("[X] "+str(get_pi_numerator(i)[0])+ "π/6") #30
-        print("[✓] "+str(get_pi_numerator(i)[1])+ "π/4" ,"--->" , 
-              int((((get_pi_numerator(i)[1])*(pi))/4)*radianDegree),"° \n") #45
+        print("[✓] "+str(get_pi_numerator(i)[1])+ "π/4" ,"--->" , int((((get_pi_numerator(i)[1])*(pi))/4)*radianDegree),"° \n") #45
         #print("[X] "+str(get_pi_numerator(i)[2])+ "π/3") #60
         
         
         #print("",get_x_even(i)[0] , "π/4" ,"\n", get_x_even(i)[1] ,"π/4")
         i += 1
+ 
