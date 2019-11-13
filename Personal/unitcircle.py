@@ -124,7 +124,7 @@ time.sleep(1)
 
 for i in range(quads):
         #i += 1
-        print("Quadrant: "+str(i+1))
+        print("Quadrant: "+str(i+1)) #display the quadrant number header
         
         #print("[X] "+str(get_pi_numerator(i)[0])+ "π/6") #30
         print( "[✓] "+str(get_pi_numerator(i)[1])+ "π/4" ,"--->" , int((((get_pi_numerator(i)[1])*(pi))/4)*radianDegree),"° \n")  #45
