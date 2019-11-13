@@ -1,5 +1,6 @@
 import math
-
+import time
+from fractions import Fraction
 
 d=4 # 45 degrees
 piQuad= 1
@@ -90,8 +91,6 @@ while 4> qNum : # pi/4
 
 print("\n--\n ")
 
-
-
 #4 is the denominator of the pi
 #i is the numerator
 #Qadrant 1 : n = d/d
@@ -105,12 +104,14 @@ print("\n--\n ")
 
 # i=1
 
-quads = 4
+quads = 16
 pi = 3.1428
+ppd = 0.0087266 #pi per degree
 #1 radian = 57.2957 degrees
 radianDegree = 57.2957
 #1pi/4 
 #(1pi/4)* radianDegree
+
 
 def get_pi_numerator(i): #Gets numerator
         num30 = (2*i)+1 #numerator = (2*i)+1 no working π/6
@@ -119,16 +120,18 @@ def get_pi_numerator(i): #Gets numerator
         return num30,num45,num60
 
 print("\nCoterminal Angles of 45° \nAccross " + str(quads) + " Quadrants in Radians\n")
+time.sleep(1)
 
 for i in range(quads):
         #i += 1
         print("Quadrant: "+str(i+1))
         
         #print("[X] "+str(get_pi_numerator(i)[0])+ "π/6") #30
-        print("[✓] "+str(get_pi_numerator(i)[1])+ "π/4" ,"--->" , int((((get_pi_numerator(i)[1])*(pi))/4)*radianDegree),"° \n") #45
+        print( "[✓] "+str(get_pi_numerator(i)[1])+ "π/4" ,"--->" , int((((get_pi_numerator(i)[1])*(pi))/4)*radianDegree),"° \n")  #45
         #print("[X] "+str(get_pi_numerator(i)[2])+ "π/3") #60
         
         
         #print("",get_x_even(i)[0] , "π/4" ,"\n", get_x_even(i)[1] ,"π/4")
         i += 1
+        time.sleep(1) #Delay print
  

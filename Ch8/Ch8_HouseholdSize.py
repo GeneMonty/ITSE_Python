@@ -18,6 +18,7 @@ householdSizeString = input("Enter household size or 999 to quit: ")
 householdSize = int(householdSizeString)
 # This is the work done in the fillArray() function
 while (householdSize != 999):
+    total += householdSize
     # Place value in array.
     householdSizes.append(householdSize)
     # Calculate total of household sizes
@@ -26,13 +27,39 @@ while (householdSize != 999):
     householdSizeString = input("Enter household size or 999 to quit: ")
     householdSize = int(householdSizeString)
 
-# Find the mean
+# Find the mean (list values + list / number of items)
+mean = total / numSizes
 
 # This is the work done in the sortArray() function
-
+for i in range(numSizes):
+    for i in range(numSizes-1):
+        if householdSizes[i] > householdSizes[i+1]:
+            temp = householdSizes[i]
+            householdSizes [i] = householdSizes [i+1]
+            householdSizes[i+1]= temp
+            
 # This is the work done in the displayArray() function
-
+for item in householdSizes:
+    print(item)
 # Find the median
+if numSizes % 2 == 0:
+    index1 = int(numSizes/2)-1
+    index2 = int(numSizes/2)
+    median = int((householdSizes[index1]+householdSizes[index2])/2)
+if numSizes % 2 != 0:
+    median = householdSizes[int(numSizes/2)]
+print("The mean is: ", mean)
+print("The median is: ", median)
+
+
+
+
+
+
+
+
+
+
 
 
 #Using a Bubble Sort in Python

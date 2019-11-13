@@ -111,7 +111,15 @@ PrecioLarge = 2 -(2 *.15)
 # x=['2','3','4','5']
 # print('---o---'.join(x)
 
-a= 1
-b=2
-print(a+b)
+def bubbleSort(nlist):
+    for passnum in range(len(nlist)-1,0,-1):
+        for i in range(passnum):
+            if nlist[i]>nlist[i+1]:
+                temp = nlist[i]
+                nlist[i] = nlist[i+1]
+                nlist[i+1] = temp
 
+nlist = [4, 1, 2, 4, 3, 3, 2, 2, 2, 4, 5, 6]
+bubbleSort(nlist)
+print(nlist)
+ 
