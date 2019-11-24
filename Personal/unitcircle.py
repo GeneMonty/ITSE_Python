@@ -33,7 +33,7 @@ print("Quad 7:",str(q7)+"π/4","-", str(q7_2)+"π/4")
 print("Quad 8:",str(q8)+"π/4","-", str(q8_2)+"π/4")
 
 angle45 = str(n) + "/" + str(d)
-print(angle45) 
+print(angle45)
 
 angle135 = str(n) + "/" + str(d)
 print(angle135)
@@ -64,11 +64,11 @@ print("\nCoterminal Angles of 45° \nAccross 16 Quadrants in Radians\n")
 #         pies = getPies (n,d)
 #         #print("Quadrant ", qNum+1 ,"\n", str(degree)+"°" ,"-->", pies)
 #         print("\n", str(degree)+"°" ,"-->", pies)
-        
+
 #         #print(str(x_even) + "π/4"+ " -> " + str(degree)+"°")
 #         n = n + 1
 #         # x_odd = x_odd
-                
+
 # for qNum in range(4):
 #         #qNum += 1
 #         print("Quadrant " , qNum) # Still not working as required
@@ -87,7 +87,7 @@ while 4> qNum : # pi/4
         #degree = getDegrees(x_odd,4)
         print(str(x_odd) + "π/4" )
         x_even = (4*qNum)-1
-        x_odd = (4*qNum)+1 
+        x_odd = (4*qNum)+1
 
 print("\n--\n ")
 
@@ -97,9 +97,9 @@ print("\n--\n ")
 #Quadran 2 : n = d-1
 #OLD VERSION
 # def get_x_even(i):
-#         #even = (4*i)#-1      
+#         #even = (4*i)#-1
 #         even = (2*i)+1
-#         odd = (4*i)+1 
+#         odd = (4*i)+1
 #         return even, odd
 
 # i=1
@@ -109,7 +109,7 @@ pi = 3.1428
 ppd = 0.0087266 #pi per degree
 #1 radian = 57.2957 degrees
 radianDegree = 57.2957
-#1pi/4 
+#1pi/4
 #(1pi/4)* radianDegree
 
 
@@ -125,13 +125,12 @@ time.sleep(1)
 for i in range(quads):
         #i += 1
         print("Quadrant: "+str(i+1)) #display the quadrant number header
-        
+
         #print("[X] "+str(get_pi_numerator(i)[0])+ "π/6") #30
         print( "[✓] "+str(get_pi_numerator(i)[1])+ "π/4" ,"--->" , int((((get_pi_numerator(i)[1])*(pi))/4)*radianDegree),"° \n")  #45
         #print("[X] "+str(get_pi_numerator(i)[2])+ "π/3") #60
-        
-        
+
+
         #print("",get_x_even(i)[0] , "π/4" ,"\n", get_x_even(i)[1] ,"π/4")
         i += 1
         time.sleep(1) #Delay print
- 

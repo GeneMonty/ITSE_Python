@@ -8,7 +8,7 @@
 #     return rate
 
 # def computeRate(days,question,planQuestion):
-    
+
 #     if question == "Y" and planQuestion == "A":
 #         rate = days * 169.00
 #         return rate
@@ -34,8 +34,8 @@
 #             return rate
 #          else:
 #             planQuestion = input("Do you want a meal plan A or C ? " )
-             
-             
+
+
 #THIS WORKS
 # Cornwall.py - This program computes hotel guest rates.
 # Input:  Days in stay and meals included
@@ -62,10 +62,10 @@ if __name__ == '__main__':
     else:
         rate = computeRate(days)
 
-    # Figure out which arguments to pass to the computeRate() function and 
+    # Figure out which arguments to pass to the computeRate() function and
     # then call the computeRate() function
     print("The rate for your stay is: ", rate )
-    
-    
-    
+
+
+
 #end program Works

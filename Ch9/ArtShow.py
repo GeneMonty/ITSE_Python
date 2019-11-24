@@ -7,7 +7,7 @@ Output: A statement telling the user if they get a discount or no discount.
 
 # Write discount function here.
 def discount ():
-    print("You are pre-registered and qualify for a 5% discount.")
+    print("You are pre-registered and qualify for a 5'%' discount.")
 
 # Write noDiscount function here.
 def noDiscount():

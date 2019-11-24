@@ -17,8 +17,8 @@ def sums(x):
 def products(x):
         num = 1
         while x >= 1:
-                num = num * x 
-                x = x - 1 
+                num = num * x
+                x = x - 1
         print(num)
 
 numberString = input("Enter a positive integer or 0 to quit: ")

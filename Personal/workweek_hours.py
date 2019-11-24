@@ -3,7 +3,7 @@
 #Declare constants
 SLEEP_HOURS = 8
 DAY_HOURS = 24
-WORK_WEEK = 5 
+WORK_WEEK = 5
 WORK_YEAR = 252
 YEAR = 365
 
