@@ -1,3 +1,4 @@
+festDay=[]
 #Goers Per Day
 d1 = 200
 d2 = d1 + (d1 * .30)
